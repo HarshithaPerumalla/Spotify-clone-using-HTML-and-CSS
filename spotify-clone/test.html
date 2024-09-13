@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Nav</title>
+    <style>
+        body {
+            background-color: #181818;
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            height: 50px;
+            width:1300px;
+            background-color: #282828;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 25px;
+        }
+
+        .search-bar {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+            border-radius: 25px;
+            background-color: #333;
+            padding: 8px 12px;
+        }
+
+        .search-bar input {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            margin-left: 10px;
+            flex: 1;
+        }
+
+        .search-bar input::placeholder {
+            color: #ccc;
+        }
+
+        .search-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-icon i {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .login {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .login button {
+            background-color: #1DB954;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Spotify_logo_without_text.svg/512px-Spotify_logo_without_text.svg.png" alt="Spotify Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div class="login">
+            <button>Log in</button>
+        </div>
+    </div>
+</body>
+</html>

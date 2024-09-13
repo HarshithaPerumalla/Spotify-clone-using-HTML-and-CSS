@@ -1,0 +1,321 @@
+/* General styles */
+body {
+  background-color: rgb(0, 0, 0);
+  height: 3000px;
+  margin: 0;
+}
+
+/* Navigation bar */
+.nav-bar {
+  background-color: rgb(0, 0, 0);
+  position:fixed;
+  margin-top: 0px;
+  margin-bottom:3px;
+  width:100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo-class {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.logo-picture {
+  max-height: 31px;
+  object-fit: fill;
+}
+
+/* Search bar template */
+.search-bar-template {
+  background-color: black;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0;
+}
+
+/* Home button */
+.home-logo-class {
+  background-color: rgb(29, 28, 28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border: solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.material-symbols-outlined {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Search bar styles */
+.search-bar-class {
+  background-color: rgb(33, 32, 32);
+  height:50px;
+  width: 500px;
+  margin:3px;
+  border:none;
+  border-radius: 50px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex; /* Add display: flex to the search-bar-class */
+}
+.search-button{
+  display: inline-flex;
+  background-color: rgb(33, 32, 32);
+  border:none;
+  margin:0px 0px 0px 9px;
+  padding: 0;
+  cursor: pointer;
+}
+.search-bar-input{
+  background-color: rgb(33, 32, 32);
+  width: 480px;
+  margin-right: 40px;
+  padding: 13px;
+  border:none;
+  font-size: 20px;
+  cursor:text;
+}
+.signup-class{
+  display:flex;
+  padding:10px;
+  margin-right:10px;
+}
+.signup-link{
+  color:#B3B3B3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.login-class{
+  display: flex;
+  background-color: white;
+  border-radius: 50px;
+  padding:10px 15px 10px 15px;
+}
+.login-link{
+  color:black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+/* SIDE BAR*/
+
+.side-bar-template {
+  margin-top: 64px;
+  display: grid;
+  background-color: rgb(18, 18, 18);
+  height: 845px;
+  width: 322px;
+  position: fixed;
+  border-radius: 10px;
+  grid-template-rows: 70px 1fr auto; /* Ensures header and content areas */
+}
+.header-class {
+  margin: 4px;
+  border-radius: 10px;
+  display: flex;
+  height: 60px;
+  max-height: 60px;
+  width: 300px;
+  background-color: rgb(18, 18, 18);
+  align-items: center;
+  justify-content: space-between;
+  grid-row: 1 / 2; /* Ensures header stays in the first row */
+}
+.yourLibrary-class{
+  display:flex;
+  margin: 6px 50px 6px 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  background-color: rgb(18,18,18);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.yourLibrary-icon-class {
+  display: inline-flex; /* This should already work */
+  height: 35px;
+  width: 35px;
+  padding-top:5px;
+  margin-right: 5px; /* Adjust as needed to provide space between icons and other elements */
+  align-items: center;
+  justify-content: center;
+}
+
+
+.yourLibrary-icon-class .material-symbols-outlined {
+  font-size: 27px;
+  color:rgb(181, 181, 181);
+  font-weight: bold; /* Adjust the size as needed */
+}
+
+.your-library-link{
+  text-decoration: none;
+  color:rgb(171, 169, 169);/* Text color */
+  font-size: 18px; /* Font size */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make text bold */
+}
+
+.add-playlist-class{
+  display: inline-flex;
+  background-color: rgb(18,18,18);
+  margin-right: 13px;
+  cursor: pointer;
+}
+
+.add-playlist-class .material-symbols-outlined{
+  font-size: 21px;
+  background-color: rgb(18, 18, 18);
+
+  font-weight: bold;
+  border:none;
+}
+.options-template {
+  display: grid;
+  margin: 4px 4px 4px 4px;
+  padding-top: 6px;
+  background-color: rgb(18,18,18);
+  height: 60%;
+  width: 97%;
+  grid-row: 2 / 3; 
+  grid-template-rows: auto 1fr;
+}
+.options-grid-class{
+  background-color: rgb(18, 18, 18);
+
+  margin: 5px;
+  display: grid;
+  padding-bottom: 45%;
+  border-radius: 5px;
+}
+.option-class-template{
+  background:rgb(31,31,31);
+  margin: 5px 5px 18px 5px;
+  height:120px;
+  border-radius: 5px;
+  justify-content: space-between;
+
+}
+.option-header-class{
+  margin:10px 10px 13px 20px;
+  background-color: transparent;
+}
+
+.text-header {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  margin: 0; /* Remove any margins */
+  padding: 0; /* Remove any padding */
+}
+
+.option-text-class {
+  margin-left: 20px;
+  margin-top: 0;/* Ensure no space above */
+  padding-top: 0; /* Ensure no padding at the top */
+  background-color: transparent;
+}
+.text-content{
+  margin:0px;
+  color:rgb(248, 248, 248);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.white-button-class{
+  display: flex;
+  background-color: transparent;
+  margin:20px 40px 20px 20px;
+  align-items: center;
+  justify-content: space-between;
+  height:20px;
+}
+
+.white-button-content{
+
+  background-color: white; /* Button background in white */
+  color: black; /* Text color in black */
+  border:none ;/* Add a border in black */
+  border-radius: 15px; /* Make the corners curved */
+  padding:8px 10px 8px 10px; /* Add some padding for better spacing */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  font-weight: bold; /* Bold text */
+
+}
+.sidebar-footer-template {
+  display: grid;
+  margin: 40px 4px 4px 4px;
+  background-color: rgb(18,18,18);
+  height: 270px;
+  width: 98%;
+  grid-row: 3/4; 
+  justify-content: space-between;
+}
+
+.content-class {
+  display: flex; /* Use Flexbox instead of Grid */
+  flex-direction: row; /* Default direction */
+  flex-wrap: wrap; /* Allow content to wrap to the next line */
+  background-color: rgb(18,18,18);
+  height: 100px;
+  max-height: 100px;
+  margin: 4px;
+  margin-top: 10px;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  text-align: center;
+  overflow: hidden; /* Prevent height from increasing */
+}
+
+/* Anchor tags inside content-class */
+.content-class a {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  margin: 5px;
+  text-align: center; /* Align the text inside the anchor tags */
+  word-wrap: break-word; /* Ensure long words wrap to the next line */
+}
+.language-option{
+  display:grid;
+  height:40px;
+  background-color:transparent;
+  align-items: center;
+}
+.language-button-class{
+  display: flex;
+  height:30px;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+}
+.lang-button-content {
+  margin-left:20px;
+  background-color: rgb(18,18,18); 
+  color: white;
+  border: 2px solid white; 
+  border-radius: 20px; 
+  padding: 10px 15px;
+  cursor: pointer; 
+  font-weight: bold; 
+}
+
